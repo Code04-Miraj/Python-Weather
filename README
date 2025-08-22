@@ -1,0 +1,45 @@
+# Weather CLI App
+
+A simple Python command-line application that fetches live weather data for any city using the OpenWeatherMap API and displays it in a readable format.
+
+## Features
+
+- Get current weather for any city
+- Shows temperature, humidity, wind speed, and weather condition
+- Handles invalid city input gracefully
+- Robust error handling for:
+  - API downtime
+  - Invalid city names
+  - No internet connection
+
+## Project Plan / Thought Process
+
+### Step 1: Choose Your Weather API
+- Signed up for OpenWeatherMap free tier
+- Tested API calls to understand endpoint structure
+- Confirmed JSON response format
+
+### Step 2: Set Up Development Environment
+- Created a virtual environment (`venv`)
+- Installed required Python libraries (`requests`)
+- Set up project folder structure
+
+### Step 3: Start Small – Make First API Call
+- Hard-coded a city name
+- Fetched data using a GET request
+- Printed raw JSON response to understand the data
+
+### Step 4: Parse and Display Basic Data
+- Extracted temperature, weather condition, humidity, and wind speed
+- Displayed the data in a clean, readable format in the terminal
+
+### Step 5: Add User Input
+- Used `input()` to accept city names dynamically
+- Converted user input to title case to handle case insensitivity
+- Handled invalid city names gracefully
+
+### Step 6: Error Handling
+- Checked for API errors or downtime
+- Handled network errors like no internet connection or request timeout
+- Used `try-except` blocks to catch exceptions
+
