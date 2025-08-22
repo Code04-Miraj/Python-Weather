@@ -33,4 +33,4 @@ except requests.exceptions.ConnectionError:
 except requests.exceptions.Timeout:
     print(f"Error: The request timed out. Try again later")
 except requests.exceptions.RequestException as err:
-    print(f"")
+    print(f"Something Went Wrong : {err}")
